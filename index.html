@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monday Night Madness | Hollywood NA Meeting</title>
-    <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     
     <script>
@@ -34,6 +31,196 @@
         .neon-text {
             text-shadow: 0 0 10px rgba(192, 132, 252, 0.7), 0 0 20px rgba(147, 51, 234, 0.5);
         }
+        .gradient-text {
+            background: linear-gradient(to right, #c084fc, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-gray-200 antialiased selection:bg-brand-purple selection:text-white">
+
+    <nav class="fixed w-full bg-slate-900/90 backdrop-blur-md border-b border-white/10 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 font-heading font-bold text-xl tracking-wider gradient-text">
+                    MNM HOLLYWOOD
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-6 text-sm font-semibold">
+                        <a href="#about" class="hover:text-brand-accent transition">About</a>
+                        <a href="#location" class="hover:text-brand-accent transition">Location & Time</a>
+                        <a href="#resources" class="hover:text-brand-accent transition">NA Resources</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-brand-purple/20 to-brand-dark z-0"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-brand-accent font-bold tracking-widest uppercase mb-3">Narcotics Anonymous</h2>
+            <h1 class="text-5xl md:text-7xl font-heading font-black text-white mb-6 neon-text uppercase">
+                Monday Night <br/> Madness
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 font-light mb-10 max-w-2xl mx-auto">
+                A safe, welcoming environment for individuals in recovery. You don't have to do this alone.
+            </p>
+            <a href="#location" class="inline-block bg-brand-purple hover:bg-purple-500 text-white font-bold py-3 px-8 rounded-full shadow-lg shadow-purple-500/30 transition transform hover:-translate-y-1">
+                Get Directions
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 bg-slate-800/50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-900 p-8 rounded-2xl border border-white/5 shadow-xl text-center">
+                    <i class="fa-solid fa-lock text-4xl text-brand-accent mb-4"></i>
+                    <h3 class="text-xl font-heading font-bold text-white mb-2">Closed Meeting</h3>
+                    <p class="text-gray-400 text-sm">This meeting is for addicts only, or for those who think they might have a drug problem.</p>
+                </div>
+                <div class="bg-slate-900 p-8 rounded-2xl border border-white/5 shadow-xl text-center">
+                    <i class="fa-solid fa-comments text-4xl text-brand-accent mb-4"></i>
+                    <h3 class="text-xl font-heading font-bold text-white mb-2">Format</h3>
+                    <p class="text-gray-400 text-sm">Speaker format. Speakers share experience, strength, and hope.</p>
+                </div>
+                <div class="bg-slate-900 p-8 rounded-2xl border border-white/5 shadow-xl text-center">
+                    <i class="fa-solid fa-hand-holding-heart text-4xl text-brand-accent mb-4"></i>
+                    <h3 class="text-xl font-heading font-bold text-white mb-2">Community</h3>
+                    <p class="text-gray-400 text-sm">An addict friendly gathering designed to support recovery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="py-20 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-white">When & Where</h2>
+                <div class="w-24 h-1 bg-brand-purple mx-auto mt-4 rounded"></div>
+            </div>
+            
+            <div class="bg-slate-900 rounded-3xl overflow-hidden border border-white/10 shadow-2xl flex flex-col md:flex-row">
+                <div class="p-8 md:p-12 md:w-1/2 flex flex-col justify-center">
+                    <div class="mb-8">
+                        <h4 class="text-brand-accent uppercase font-bold text-sm mb-1">Time</h4>
+                        <p class="text-2xl text-white font-heading font-bold">Every Monday</p>
+                        <p class="text-xl text-gray-300">7:30 PM – 9:00 PM</p>
+                    </div>
+                    <div>
+                        <h4 class="text-brand-accent uppercase font-bold text-sm mb-1">Location</h4>
+                        <p class="text-xl text-white font-heading font-bold">Hollywood Lutheran Church</p>
+                        <p class="text-gray-300 mb-4">1733 North New Hampshire Avenue<br>Los Angeles, CA 90027</p>
+                        <a href="https://maps.google.com/?q=1733+N+New+Hampshire+Ave,+Los+Angeles,+CA+90027" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-brand-accent hover:text-white transition font-semibold">
+                            Open in Google Maps <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 h-64 md:h-auto bg-slate-800 relative overflow-hidden">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAE_tWSC4XHi3_8pYZLDuw-V1yexliJ4giS3vy_wUmjdhvJkJIp8uQmJOWSy2stwlIVIGV2Kdjvh0HHXPozuWdky7cFxyOIuOJiFJOhbKRUdEXbiSK_bdg5nNe_1X33QcTz13COj=w175-h125-n-k-no-nu?auto=format&fit=crop&q=80&w=800" class="absolute inset-0 w-full h-full object-cover" alt="Map background">
+                    <div class="absolute inset-0 flex items-center justify-center"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="shop" class="py-20 bg-slate-800/80">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-white">Group Merch</h2>
+                <div class="w-24 h-1 bg-brand-purple mx-auto mt-4 rounded"></div>
+                <p class="mt-4 text-gray-400 max-w-2xl mx-auto">Support Monday Night Madness. All proceeds go directly toward meeting rent, coffee, and providing literature to newcomers.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-slate-900 rounded-2xl overflow-hidden border border-white/5 shadow-xl group">
+                    <div class="h-64 bg-slate-800 relative overflow-hidden flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80&w=600" alt="Group T-Shirt" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition duration-500">
+                        <div class="absolute text-white font-heading font-bold text-2xl tracking-widest uppercase text-center neon-text z-10">MNM<br>Shirt</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-1">MNM Hollywood T-Shirt</h3>
+                        <p class="text-brand-accent font-heading font-bold text-lg mb-4">$20.00</p>
+                        <p class="text-gray-400 text-sm mb-6">Premium dark-blend cotton tee featuring our Monday Night Madness neon logo.</p>
+                        <a href="YOUR_STRIPE_PAYMENT_LINK_HERE" target="_blank" rel="noopener noreferrer" class="block w-full text-center border border-brand-purple text-brand-accent hover:bg-brand-purple hover:text-white font-bold py-3 px-4 rounded-lg transition">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 rounded-2xl overflow-hidden border border-white/5 shadow-xl group">
+                    <div class="h-64 bg-slate-800 relative overflow-hidden flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&q=80&w=600" alt="Coffee Mug" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition duration-500">
+                        <i class="fa-solid fa-mug-hot absolute text-white text-5xl z-10 opacity-80"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-1">"Just For Today" Mug</h3>
+                        <p class="text-brand-accent font-heading font-bold text-lg mb-4">$15.00</p>
+                        <p class="text-gray-400 text-sm mb-6">Matte black ceramic coffee mug. Perfect for that essential pre-meeting caffeine.</p>
+                        <a href="YOUR_STRIPE_PAYMENT_LINK_HERE" target="_blank" rel="noopener noreferrer" class="block w-full text-center border border-brand-purple text-brand-accent hover:bg-brand-purple hover:text-white font-bold py-3 px-4 rounded-lg transition">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 rounded-2xl overflow-hidden border border-white/5 shadow-xl group">
+                    <div class="h-64 bg-slate-800 relative overflow-hidden flex items-center justify-center">
+                        <img src="https://store.chicagona.org/wp-content/uploads/2016/10/IMG_0322-e1612652335710-scaled.jpg" alt="Book" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition duration-500">
+                        <i class="fa-solid fa-book absolute text-white text-5xl z-10 opacity-80"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-1">Sponsor a Basic Text</h3>
+                        <p class="text-brand-accent font-heading font-bold text-lg mb-4">$15.00</p>
+                        <p class="text-gray-400 text-sm mb-6">Buy a book to be given away to the newcomer at our next Monday night meeting.</p>
+                        <a href="YOUR_STRIPE_PAYMENT_LINK_HERE" target="_blank" rel="noopener noreferrer" class="block w-full text-center border border-brand-purple text-brand-accent hover:bg-brand-purple hover:text-white font-bold py-3 px-4 rounded-lg transition">
+                            Donate Book
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+ 
+    <section id="resources" class="py-20 bg-slate-900 border-t border-white/5">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-heading font-bold text-white mb-8">Official Resources & Help</h2>
+            <p class="text-gray-400 mb-10">If you need immediate assistance or want to learn more about the Narcotics Anonymous program, please utilize these official channels.</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a href="https://na.org/" target="_blank" rel="noopener noreferrer" class="block p-6 bg-slate-800 rounded-xl border border-white/5 hover:border-brand-purple hover:bg-slate-800/80 transition group">
+                    <h3 class="text-lg font-bold text-white group-hover:text-brand-accent">NA World Services</h3>
+                    <p class="text-sm text-gray-400 mt-2">The official global website for Narcotics Anonymous.</p>
+                </a>
+                <a href="https://hollywoodna.org/" target="_blank" rel="noopener noreferrer" class="block p-6 bg-slate-800 rounded-xl border border-white/5 hover:border-brand-purple hover:bg-slate-800/80 transition group">
+                    <h3 class="text-lg font-bold text-white group-hover:text-brand-accent">Greater Hollywood Area NA</h3>
+                    <p class="text-sm text-gray-400 mt-2">Local meetings, events, and literature.</p>
+                </a>
+            </div>
+
+            <div class="mt-12 p-6 bg-brand-purple/10 border border-brand-purple/30 rounded-2xl">
+                <h3 class="text-white font-bold mb-2">24/7 Local Helpline</h3>
+                <p class="text-3xl font-heading font-black text-brand-accent">
+                    <a href="tel:3238501624">(323) 850-1624</a>
+                </p>
+                <p class="text-sm text-gray-400 mt-2">Provided by Greater Hollywood Area NA</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-8 text-center text-gray-500 text-sm">
+        <div class="max-w-6xl mx-auto px-4">
+            <p>Monday Night Madness Group is a local fellowship of Narcotics Anonymous. This website is independently operated and strictly adheres to NA's Traditions of anonymity and public relations.</p>
+            <p class="mt-4">© 2026 Monday Night Madness Group. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
         .gradient-text {
             background: linear-gradient(to right, #c084fc, #3b82f6);
             -webkit-background-clip: text;
