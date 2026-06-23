@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monday Night Madness | Hollywood NA Meeting</title>
+    <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     
     <script>
@@ -40,6 +43,7 @@
 </head>
 <body class="bg-brand-dark text-gray-200 antialiased selection:bg-brand-purple selection:text-white">
 
+    <!-- Navigation -->
     <nav class="fixed w-full bg-slate-900/90 backdrop-blur-md border-b border-white/10 z-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
@@ -50,6 +54,7 @@
                     <div class="ml-10 flex items-baseline space-x-6 text-sm font-semibold">
                         <a href="#about" class="hover:text-brand-accent transition">About</a>
                         <a href="#location" class="hover:text-brand-accent transition">Location & Time</a>
+                        <a href="#shop" class="hover:text-brand-accent transition">Shop</a>
                         <a href="#resources" class="hover:text-brand-accent transition">NA Resources</a>
                     </div>
                 </div>
@@ -57,6 +62,7 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-b from-brand-purple/20 to-brand-dark z-0"></div>
         <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -73,6 +79,7 @@
         </div>
     </section>
 
+    <!-- About / Meeting Info -->
     <section id="about" class="py-16 bg-slate-800/50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -95,6 +102,7 @@
         </div>
     </section>
 
+    <!-- Location & Time -->
     <section id="location" class="py-20 relative">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
@@ -119,6 +127,7 @@
                     </div>
                 </div>
                 
+                <!-- Map Placeholder / Background -->
                 <div class="md:w-1/2 h-64 md:h-auto bg-slate-800 relative overflow-hidden">
                     <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAE_tWSC4XHi3_8pYZLDuw-V1yexliJ4giS3vy_wUmjdhvJkJIp8uQmJOWSy2stwlIVIGV2Kdjvh0HHXPozuWdky7cFxyOIuOJiFJOhbKRUdEXbiSK_bdg5nNe_1X33QcTz13COj=w175-h125-n-k-no-nu?auto=format&fit=crop&q=80&w=800" class="absolute inset-0 w-full h-full object-cover" alt="Map background">
                     <div class="absolute inset-0 flex items-center justify-center"></div>
@@ -127,6 +136,7 @@
         </div>
     </section>
 
+    <!-- Merch & Literature Shop -->
     <section id="shop" class="py-20 bg-slate-800/80">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
@@ -137,45 +147,90 @@
             
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <div class="bg-slate-900 rounded-2xl overflow-hidden border border-white/5 shadow-xl group">
+                <!-- Product 1: T-Shirt -->
+                <div class="bg-slate-900 rounded-2xl overflow-hidden border border-white/5 shadow-xl group flex flex-col">
                     <div class="h-64 bg-slate-800 relative overflow-hidden flex items-center justify-center">
                         <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80&w=600" alt="Group T-Shirt" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition duration-500">
                         <div class="absolute text-white font-heading font-bold text-2xl tracking-widest uppercase text-center neon-text z-10">MNM<br>Shirt</div>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-1">MNM Hollywood T-Shirt</h3>
-                        <p class="text-brand-accent font-heading font-bold text-lg mb-4">$20.00</p>
-                        <p class="text-gray-400 text-sm mb-6">Premium dark-blend cotton tee featuring our Monday Night Madness neon logo.</p>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-1">MNM Hollywood T-Shirt</h3>
+                            <p class="text-brand-accent font-heading font-bold text-lg mb-4">$20.00</p>
+                            <p class="text-gray-400 text-sm mb-6">Premium dark-blend cotton tee featuring our Monday Night Madness neon logo.</p>
+                        </div>
                         <a href="YOUR_STRIPE_PAYMENT_LINK_HERE" target="_blank" rel="noopener noreferrer" class="block w-full text-center border border-brand-purple text-brand-accent hover:bg-brand-purple hover:text-white font-bold py-3 px-4 rounded-lg transition">
                             Buy Now
                         </a>
                     </div>
                 </div>
 
-                <div class="bg-slate-900 rounded-2xl overflow-hidden border border-white/5 shadow-xl group">
+                <!-- Product 2: Hoodie -->
+                <div class="bg-slate-900 rounded-2xl overflow-hidden border border-white/5 shadow-xl group flex flex-col">
+                    <div class="h-64 bg-slate-800 relative overflow-hidden flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&q=80&w=600" alt="Group Hoodie" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition duration-500">
+                        <div class="absolute text-white font-heading font-bold text-2xl tracking-widest uppercase text-center neon-text z-10">MNM<br>Hoodie</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-1">MNM Hollywood Hoodie</h3>
+                            <p class="text-brand-accent font-heading font-bold text-lg mb-4">$40.00</p>
+                            <p class="text-gray-400 text-sm mb-6">Stay warm after the meeting with this heavy-blend pullover hoodie featuring our logo.</p>
+                        </div>
+                        <a href="YOUR_STRIPE_PAYMENT_LINK_HERE" target="_blank" rel="noopener noreferrer" class="block w-full text-center border border-brand-purple text-brand-accent hover:bg-brand-purple hover:text-white font-bold py-3 px-4 rounded-lg transition">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Coffee Mug -->
+                <div class="bg-slate-900 rounded-2xl overflow-hidden border border-white/5 shadow-xl group flex flex-col">
                     <div class="h-64 bg-slate-800 relative overflow-hidden flex items-center justify-center">
                         <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&q=80&w=600" alt="Coffee Mug" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition duration-500">
                         <i class="fa-solid fa-mug-hot absolute text-white text-5xl z-10 opacity-80"></i>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-1">"Just For Today" Mug</h3>
-                        <p class="text-brand-accent font-heading font-bold text-lg mb-4">$15.00</p>
-                        <p class="text-gray-400 text-sm mb-6">Matte black ceramic coffee mug. Perfect for that essential pre-meeting caffeine.</p>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-1">"Just For Today" Mug</h3>
+                            <p class="text-brand-accent font-heading font-bold text-lg mb-4">$15.00</p>
+                            <p class="text-gray-400 text-sm mb-6">Matte black ceramic coffee mug. Perfect for that essential pre-meeting caffeine.</p>
+                        </div>
                         <a href="YOUR_STRIPE_PAYMENT_LINK_HERE" target="_blank" rel="noopener noreferrer" class="block w-full text-center border border-brand-purple text-brand-accent hover:bg-brand-purple hover:text-white font-bold py-3 px-4 rounded-lg transition">
                             Buy Now
                         </a>
                     </div>
                 </div>
 
-                <div class="bg-slate-900 rounded-2xl overflow-hidden border border-white/5 shadow-xl group">
+                <!-- Product 4: LED Logo Fan -->
+                <div class="bg-slate-900 rounded-2xl overflow-hidden border border-white/5 shadow-xl group flex flex-col">
+                    <div class="h-64 bg-slate-800 relative overflow-hidden flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1563122870-6b0b48a0af09?auto=format&fit=crop&q=80&w=600" alt="LED Fan" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition duration-500">
+                        <i class="fa-solid fa-fan absolute text-white text-5xl z-10 opacity-80"></i>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-1">MNM LED Logo Fan</h3>
+                            <p class="text-brand-accent font-heading font-bold text-lg mb-4">$25.00</p>
+                            <p class="text-gray-400 text-sm mb-6">Cool off with this portable handheld fan that projects the Monday Night Madness neon logo as it spins.</p>
+                        </div>
+                        <a href="YOUR_STRIPE_PAYMENT_LINK_HERE" target="_blank" rel="noopener noreferrer" class="block w-full text-center border border-brand-purple text-brand-accent hover:bg-brand-purple hover:text-white font-bold py-3 px-4 rounded-lg transition">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 5: Literature -->
+                <div class="bg-slate-900 rounded-2xl overflow-hidden border border-white/5 shadow-xl group flex flex-col">
                     <div class="h-64 bg-slate-800 relative overflow-hidden flex items-center justify-center">
                         <img src="https://store.chicagona.org/wp-content/uploads/2016/10/IMG_0322-e1612652335710-scaled.jpg" alt="Book" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition duration-500">
                         <i class="fa-solid fa-book absolute text-white text-5xl z-10 opacity-80"></i>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-1">Sponsor a Basic Text</h3>
-                        <p class="text-brand-accent font-heading font-bold text-lg mb-4">$15.00</p>
-                        <p class="text-gray-400 text-sm mb-6">Buy a book to be given away to the newcomer at our next Monday night meeting.</p>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-1">Sponsor a Basic Text</h3>
+                            <p class="text-brand-accent font-heading font-bold text-lg mb-4">$15.00</p>
+                            <p class="text-gray-400 text-sm mb-6">Buy a book to be given away to the newcomer at our next Monday night meeting.</p>
+                        </div>
                         <a href="YOUR_STRIPE_PAYMENT_LINK_HERE" target="_blank" rel="noopener noreferrer" class="block w-full text-center border border-brand-purple text-brand-accent hover:bg-brand-purple hover:text-white font-bold py-3 px-4 rounded-lg transition">
                             Donate Book
                         </a>
@@ -186,6 +241,7 @@
         </div>
     </section>
  
+    <!-- Resources -->
     <section id="resources" class="py-20 bg-slate-900 border-t border-white/5">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl font-heading font-bold text-white mb-8">Official Resources & Help</h2>
@@ -212,6 +268,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="bg-black py-8 text-center text-gray-500 text-sm">
         <div class="max-w-6xl mx-auto px-4">
             <p>Monday Night Madness Group is a local fellowship of Narcotics Anonymous. This website is independently operated and strictly adheres to NA's Traditions of anonymity and public relations.</p>
